@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 int count1(int n1, int n);
 int count2 (int n1,int n);
 int main ()  { 
