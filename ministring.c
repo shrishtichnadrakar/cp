@@ -4,7 +4,7 @@
 
 
 #include <stdio.h>
-
+#include <string.h>
 
 
 
@@ -18,7 +18,7 @@ int main () {
 
 char str[100];
 char ch;
-char input;
+char input [5];
 
 printf("entre the text: ");
 scanf("%[^\n]",&str);
@@ -26,14 +26,14 @@ printf("which character you want to find : ");
 scanf(" %c",&ch);
 checkchar (str,ch);
 
-printf("want to know how many times");
-scanf(" %c", &input);
+printf("want to know how many times yes or no : ");
+scanf(" %s", &input);
 
 
-if (input== 'y') {
+if (strcmp(input,"yes")==0) {
     printf("the charecter repeaded %d times", count (str,ch));
 }
-else if (input=='n') {
+else if (strcmp(input,"no")==0) {
     printf(" thakyou");
 }
 
