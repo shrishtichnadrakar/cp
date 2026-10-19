@@ -12,7 +12,7 @@ int c=0;
 // x= sqrt(n);
 
 if (n<=1) {
-    printf("netiher prime nor composite");
+    printf("neither prime nor composite");
 
 }
 for (int i=2;i<n;i++) {
